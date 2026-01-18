@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+.venv311/
+
+# Database
+icu.db
+
+# IDE
+.vscode/
+.idea/

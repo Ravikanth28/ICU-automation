@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Smart ICU Dashboard</title>
+    <meta charset="UTF-8">
+    <title>Smart ICU Resource Allocation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Smart ICU Resource Allocation</h1>
-  <button onclick="allocate()">Allocate ICU Resource</button>
-  <pre id="output"></pre>
 
-  <script src="dashboard.js"></script>
+<div class="container">
+    <h1>Smart ICU Resource Allocation</h1>
+    <p class="subtitle">AI-assisted ICU decision support dashboard</p>
+
+    <div class="card">
+        <h2>Add Patient</h2>
+        <input id="pname" placeholder="Patient name">
+        <select id="severity">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <button onclick="addPatient()">Add Patient</button>
+    </div>
+
+    <div class="card">
+        <h2>Add ICU Resource</h2>
+        <button onclick="addResource()">Add ICU Bed</button>
+    </div>
+
+    <div class="card highlight">
+        <h2>Allocate ICU Resource</h2>
+        <button class="primary" onclick="allocate()">Allocate</button>
+    </div>
+
+    <div class="card">
+        <h2>System Response</h2>
+        <pre id="output">Waiting for action...</pre>
+    </div>
+</div>
+
+<script src="dashboard.js"></script>
 </body>
 </html>

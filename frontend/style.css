@@ -1,0 +1,96 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #f9fbff);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    color: #0d47a1;
+}
+
+.subtitle {
+    text-align: center;
+    color: #546e7a;
+    margin-bottom: 35px;
+    font-size: 15px;
+}
+
+/* Cards */
+.card {
+    background: #ffffff;
+    padding: 22px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #bbdefb;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #0d47a1;
+}
+
+/* Highlight allocation card */
+.highlight {
+    border-left: 6px solid #1976d2;
+    background: #f5faff;
+}
+
+/* Inputs */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #1976d2;
+}
+
+/* Buttons */
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #455a64;
+    color: #ffffff;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Primary action */
+.primary {
+    background-color: #1976d2;
+}
+
+/* Response box */
+pre {
+    background: #f1f5f9;
+    padding: 12px;
+    border-radius: 8px;
+    max-height: 220px;
+    overflow-y: auto;
+    font-size: 13px;
+    border-left: 4px solid #90caf9;
+}
